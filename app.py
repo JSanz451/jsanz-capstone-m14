@@ -14,7 +14,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 # DATA
-df = pd.read_parquet(r'./tmp/social_network.parquet') #He modificado la ruto para que la coja bien
+df = pd.read_parquet('/tmp/social_network.parquet') #Poner punto al principio para que la coja bien en windows local machine r'./tmp/social_network.parquet'
 
 # LAYOUT
 app.layout = html.Div([
